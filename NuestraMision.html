@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión - Papelería Ma&Lop Tienda de Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo_donde_mas_brillan-removebg-preview.png" alt="" height="100" width="100" >
+            </a>
+            <h1 class="site-title" id="site-title" data-es="DONDE MAS BRILLAN LAS ESTRELLAS" data-en="DONDE MAS BRILLAN LAS ESTRELLAS">DONDE MAS BRILLAN LAS ESTRELLAS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
+                <li><a href="NOSOTROS" data-es="NOSOTROS" data-en="ABOUT US">NOSOTROS <span class="arrow">&#9662;</span></a>
+                    <ul class="submenu">
+                        <li><a href="mision.html" id="mision" data-es="Misión" data-en="Mission">Misión</a></li>
+                        <li><a href="vision.html" id="vision" data-es="Visión" data-en="Vision">Visión</a></li>
+                    </ul>
+              
+                </li>
+                <li>
+                    <button id="btn-es" onclick="changeLanguage('es')">Español</button>
+                    <button id="btn-en" onclick="changeLanguage('en')">English</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mision-section">
+            <h2 id="mision-title" data-es="Nuestra Misión" data-en="Our Mission">Nuestra Misión</h2>
+            <p id="mision-content" data-es="Nuestra Mision en Donde mas brillan las estrellas es impulsar a los joevenz sin acceso a la educacion jovenez en comunidades remotasdonde tienen una gran capacidad pero oportunidades no" data-en=".Our Mission at Where the Stars Shine Most is to empower young people without access to education in remote communities where they have great capacity but no opportunities..">Nuestra Mision en Donde mas brillan las estrellas es impulsar a los joevenz sin acceso a la educacion jovenez en comunidades remotasdonde tienen una gran capacidad pero oportunidades no.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-container">
+            <a href="index.html"><img src="img/logo_donde_mas_brillan-removebg-preview.png" alt="Logo Papelería Ma&Lop"></a>
+        </div>
+        <div class="social-media">
+        
+            <a href="https://www.facebook.com/profile.php?id=100063504823811&mibextid=ZbWKwL"><img src="img/Facebook_Logo_(2019).png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/ma__lop?igsh=bXhqZmx1MzB5ZDZs"><img src="img/Instagram_logo_2022.svg.png" alt="Instagram"></a>
+        </div>
+        <div class="contact-info">
+            <h3 id="correo-title" data-es="Correo" data-en="Email">Correo</h3>
+            <p id="correo" data-es="dondemasbrillalasestrellas@gmail.com" data-en="dondemasbrillalasestrellas@gmail.com">dondemasbrillalasestrellas@gmail.com</p>
+            <h3 id="biografia-title" data-es="Biografía" data-en="Biography">Biografía</h3>
+            <p id="biografia" data-es="Diseñado Por TECNICOS EN INNOVACION Inc, Sitio web creado 07/09/2024." data-en="Designed By Tecnicos en Innovacion Inc, Website created 06/09/2024.">Diseñado Por TECNICOS EN  Innovacion Inc, Sitio web creado 07/09/2024.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            document.querySelectorAll('[data-es][data-en]').forEach(function(element) {
+                element.textContent = lang === 'es' ? element.getAttribute('data-es') : element.getAttribute('data-en');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var lang = document.documentElement.getAttribute('lang');
+            changeLanguage(lang);
+        });
+    </script>
+</body>
+</html>

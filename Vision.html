@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión - DONDE MAS BRILLAN LAS ESTRELLAS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .vision-section {
+            background-image: url("img/Diferencias-entre-el-mundo-y-el-universo.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .vision-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .vision-content {
+            position: relative;
+            z-index: 2;
+        }
+        .vision-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .vision-text {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .vision-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .vision-icon {
+            background: white;
+            border-radius: 50%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .vision-icon img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img src="img/logo_donde_mas_brillan-removebg-preview.png" alt="">
+            </a>
+            <h1 class="site-title" id="site-title" data-es="DONDE MAS BRILLAN LAS ESTRELLAS" data-en="WHERE THE STARS SHINE THE MOST">DONDE MAS BRILLAN LAS ESTRELLAS</h1>
+        </div>
+        <nav>
+            <ul>
+
+
+            </li>
+            <li><a href="index.html" id="Inicio" data-es="Inicio" data-en="start">Inicio</a></li>
+            <li>
+
+                </li>
+                <li>
+                    <a href="TALLERES" data-es="TALERRES" data-en="WORKSHOPS">Talleres <span class="arrow">&#9662;</span></a>
+                    <ul class="submenu">
+                        <li><a href="muñecas.html" id="Robotica" data-es="Robotica" data-en="Robotics">Robotica</a></li>
+                        <li><a href="carritos.html" id="Coheteria espacial" data-es="Coheteria espacial" data-en="Space rocketry">Coheteria espacial</a></li>
+                    </ul>
+                </li>
+                <li><a href="conta" id="contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li>
+                    <button id="btn-es" onclick="changeLanguage('es')">Español</button>
+                    <button id="btn-en" onclick="changeLanguage('en')">English</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="vision-section">
+            <div class="vision-overlay"></div>
+            <div class="vision-content">
+                <h2 class="vision-title" id="vision-title" data-es="Nuestra Visión" data-en="Our Vision">Nuestra Visión</h2>
+                <p class="vision-text" id="vision-text" data-es="Donde mas brillan las Estrellas, aspiramos a llegar a todos los rincones del mundo, proporcionando educacion de la más alta calidad a cada escuela y Comunidades. Creemos en el poder de la educación y la creatividad, y estamos comprometidos a ser un pilar de apoyo en cada comunidad." data-en="Where the stars shine brightest We aspire to reach every corner of the world, providing the highest quality education to every school and community. We believe in the power of education and creativity, and we are committed to being a pillar of support in every community..">Donde mas Brillan las estrellas Aspiramos a llegar a todos los rincones del mundo, brindando la educacion  de la más alta calidad a cada Escuela y Comunidad. Creemos en el poder de la educación y la creatividad, y estamos comprometidos a ser un pilar de apoyo en cada comunidad..</p>
+                <div class="vision-icons">
+                    <div class="vision-icon">
+                        <img src="img/educacion.png" alt="Educación">
+                    </div>
+                    <div class="vision-icon">
+                        <img src="img/creatividad.png" alt="Creatividad">
+                    </div>
+                    <div class="vision-icon">
+                        <img src="img/comunidad.png" alt="Comunidad">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logo-section">
+            <div class="social-media">
+        
+                <a href=""><img src="img/Facebook_Logo_(2019).png" alt="Facebook"></a>
+                <a href=""><img src="img/Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            
+            </div>
+            <div class="logo-container">
+                <a href="#"><img src="img/logo_donde_mas_brillan-removebg-preview.png" alt="LOGO PAPELERIA"></a>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2 id="contacto-title" data-es="CONTACTO" data-en="CONTACT">CONTACTO</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <img src="imagenes/logo papleria.png" alt="">
+                    <h3 id="correo-title" data-es="Correo" data-en="Email">Correo</h3>
+                    <p id="correo" data-es="dondemasbrillalasestrellas@gmail.com" data-en="dondemasbrillalasestrellas@gmail.com">dondemasbrillalasestrellas@gmail.com</p>
+                    <h3 id="biografia-title" data-es="Biografía" data-en="Biography">Biografía</h3>
+                    <p id="biografia" data-es="Diseñado Por Mementos Tecnicos en Innovacion creado 06/09/2024." data-en="Designed By Tecnicos en Innovacion, Website created 06/09/2024.">Diseñado Por Mementos Tecnicos en Innovacion creado 06/09/2024.</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <label for="nombre" id="nombre-label" data-es="Nombre:" data-en="Name:">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <label for="apellido" id="apellido-label" data-es="Apellido:" data-en="Surname:">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido">
+                        <label for="email" id="email-label" data-es="Email:" data-en="Email:">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="mensaje" id="mensaje-label" data-es="Mensaje:" data-en="Message:">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <button type="submit" id="enviar-button" data-es="Enviar" data-en="Send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
